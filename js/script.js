@@ -16,21 +16,21 @@
 /**/
 
 // CREATING AN OBJECT
-/*/
+
 var student = {
     "name": 'Francesco',
     surname: 'Ferilli',
     age: '25',
 };
 // LOG THE OBJECT
-// console.log(student);
+console.log(student);
 
 
 // LOOP TO LOG ALL THE OBJECT'S PROPERTIES
 for( key in student) {
     console.log(student[key]);
 }
-*/
+
 
 
 /**
@@ -38,9 +38,10 @@ for( key in student) {
  *  TASK 2
  * 
 /**/
-/*
+
 // CREATING ARRAY OF OBJECTS
 var students = [
+    
     {
         "name": 'Francesco',
         surname: 'Ferilli',
@@ -67,11 +68,34 @@ var students = [
         age: '26',
     },
 ];
+
 //LOG OF ALL THE ARRAY
-// console.log(students);
+console.log(students);
 
 // LOOP TO LOG ONLY TWO PROPERTIES OF THREE (NAME & SURNAME)
 for(var i = 0; i < students.length; i++) {
     console.log(students[i].name + ' ' + students[i].surname);
 }
-*/
+
+
+/**
+ * 
+ *  TASK 3
+ * 
+/**/
+
+// CREATING A NEW OBJECT ASKING THE USER TO INSERT HIS INFO
+var newStudent = {
+    "name": prompt('Please enter your Name').trim(),
+    surname: prompt('Please enter your Surname').trim(),
+    age: parseInt( prompt('How old are you?') ).trim(),
+};
+
+// LOGG OF THE NEW OBJECT
+console.log(newStudent);
+
+// ADDING THE NEW OBJECT TO THE PREVIOUS ARRAY
+students.push(newStudent);
+
+// LOG OF THE ARRAY WITH THE NEW OBJECT INSIDE IT
+console.log(students);
