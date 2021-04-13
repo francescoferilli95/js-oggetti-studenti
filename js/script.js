@@ -38,4 +38,40 @@ for( key in student) {
  *  TASK 2
  * 
 /**/
+/*
+// CREATING ARRAY OF OBJECTS
+var students = [
+    {
+        "name": 'Francesco',
+        surname: 'Ferilli',
+        age: '25',
+    },
+    {
+        "name": 'Luigi',
+        surname: 'Rossi',
+        age: '28',
+    },
+    {
+        "name": 'Sara',
+        surname: 'Prima',
+        age: '22',
+    },
+    {
+        "name": 'Marco',
+        surname: 'Verde',
+        age: '30',
+    },
+    {
+        "name": 'Caterina',
+        surname: 'Politi',
+        age: '26',
+    },
+];
+//LOG OF ALL THE ARRAY
+// console.log(students);
 
+// LOOP TO LOG ONLY TWO PROPERTIES OF THREE (NAME & SURNAME)
+for(var i = 0; i < students.length; i++) {
+    console.log(students[i].name + ' ' + students[i].surname);
+}
+*/
